@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>storage</title>
+            <link rel="stylesheet" href="./css/all.min.css">
+            <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+            <link rel="stylesheet" href="./css/main.css">
+      </head>
+
+
+      <body>
+            <h1 class="text-center text-info mt-3"> Our Products </h1>
+            <!-- inputs -->
+            <div class="container allinputs col-md-9">
+                  <div class="card">
+                        <div class="card-body " id="Play">
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Product Title" id="title">  
+                                  <div id="valid" class="none text-center alert alert-danger">
+                                    You Must Enter Data...
+                                  </div>
+                                  <div class="row" id="cost">
+                                    <div class="col-md-3">
+                                          <div class="form-group">
+                                                <input type="number" class="form-control" placeholder="Price">  
+                                          </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                          <div class="form-group">
+                                                <input type="number" class="form-control" placeholder="Taxes">  
+                                          </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                          <div class="form-group">
+                                                <input type="number" class="form-control" placeholder="TransferCost">  
+                                          </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                          <div class="form-group">
+                                                <input type="number" class="form-control" placeholder="Discount">  
+                                          </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                          <div class="form-group">
+                                                <input type="number" class="form-control" placeholder="Total" readonly>  
+                                          </div>
+                                    </div>
+                                  </div>
+                                  <div id="postive" class="none text-center alert alert-danger">
+                                    You Must Enter Postive no...
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Count" id="count">  
+                                  <input type="text" class="form-control" placeholder="Department" id="department">  
+                                  <div class="d-grid">
+                                    <button class="btn btn-info" id="btncreate"> Create </button>
+                                  </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            
+            <h1 class="text-center text-info m-5"> Products List </h1>
+            <!-- table products -->
+            <div class="container">
+                  <div class="card">
+                        <div class="card-body " id="play">
+                              <div class="d-grid my-2">
+                                    <button class="btn btn-danger" id="deleteallbtn"> Delete All <span id="spancount"> </span></button>
+                              </div>
+                              <table class="table table-dark text-center">
+                                    <tr>
+                                          <th> ID </th>
+                                          <th> Title </th>
+                                          <th> Price </th>
+                                          <th> Tax </th>
+                                          <th> T.coast </th>
+                                          <th> Discount</th>
+                                          <th> Total </th>
+                                          <th> Count </th>
+                                          <th> Department </th>
+                                          <th colspan="2"> Action </th>
+                                    </tr>
+                                    <tbody id="tbody">
+
+                                    </tbody>
+                              </table>
+                        </div>
+                  </div>
+            </div>
+
+            <button id="shift" class="btn btn-light"> <i class="fa-solid fa-lightbulb"></i> </button>
+
+
+            <script src="./js/bootstrap.bundle.min.js"></script>
+
+            <script src="./js/main.js"></script>
+      </body>
+</html>

@@ -1,0 +1,55 @@
+*{
+      transition: all .3s;
+}
+.light{
+      background-color: #fff;
+      color: #000;
+}
+body{
+      background-color: #000;
+      color: #fff;
+}
+.card{
+      background-color: #333;
+      padding: 6px;
+      color: #fff;
+}
+.card-body{
+      background-color: #000;
+      color: #fff;
+}
+.form-control{
+      margin: 10px 0px;
+      background-color: #333;
+      color: #fff;
+}
+.form-control::placeholder{
+      color: #fff;
+      font-weight:500;
+}
+.form-control:focus{
+      background-color: #6d6d6d;
+      color: #fff;
+}
+.table i{
+      font-size: 15px;
+      cursor: pointer;
+}
+.table i:hover{
+      text-shadow: 5px 5px 5px black;
+      transform: scale(1.5);
+}
+.table  .delete{
+      color: red;
+}
+.table .edit{
+      color: rgb(28, 177, 28);
+}
+.none{
+      display: none;
+}
+#shift{
+      position: absolute;
+      bottom: 2%;
+      right: 2% ;
+}
