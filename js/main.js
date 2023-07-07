@@ -173,7 +173,7 @@ displaybtn();
 
 // edit item
 let editone = (i) => {
-      let mood = 'update';
+      mood = 'update';
       globalid = i ;
 
       title.value = alldata[i].title;
